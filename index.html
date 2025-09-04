@@ -7,48 +7,46 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <!-- Navs will be at left side... -->
-
-    <!-- middle  part -->
     <main>
       <!-- Whats on your mind section  -->
       <section class="">
         <!-- Input text here  -->
-        <div class="min-h-40 text-center border-2 border-red-500 bg-gray-400 w-11/12 mx-auto rounded-xl">
+        <div
+          class="min-h-10 text-center p-8 bg-gray-300 w-1/2 my-4 mx-auto rounded-xl"
+        >
           <input
-            class="min-h-24 w-3/4 mx-auto border-4 border-green-500 text-center rounded-xl my-4 bg-white text-black font-bold"
+            class="min-h-24 w-11/12 mx-auto border-2 border-green-500 text-center rounded-xl bg-white text-black font-bold"
             type="text"
             name=""
-            id=""
+            id="text-input"
             placeholder="Whats on your mind...?"
           />
 
           <!-- Choose photo or file here  -->
 
-          <div class="mb-4 flex flex-row justify-between items-center w-3/4 mx-auto">
+          <div
+            class="mt-4 flex flex-row justify-around items-center w-3/4 mx-auto"
+          >
             <input
               type="file"
               name=""
               class="bg-black text-white px-5 py-2 rounded-full font-bold cursor-pointer"
-              id=""
+              id="input-files"
             />
             <button
+              id="btn-post"
               class="bg-black text-white px-4 py-2 rounded-full font-bold cursor-pointer"
             >
               Post
             </button>
           </div>
-
-
         </div>
       </section>
 
       <!-- Posts activity here  -->
-       <section id="activity">
-        <div id="posts" class="border-4 w-3/4 mx-auto rounded-2xl my-5 p-5 ">
-
-        </div>
-       </section>
+      <section id="activity"></section>
     </main>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
